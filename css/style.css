@@ -1,3 +1,36 @@
+/* reset */
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  margin-left: 0;
+  padding-left: 0;
+  -webkit-padding-start: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* geral */
 body {
   font-family: 'Dosis', sans-serif;
 }
@@ -9,68 +42,96 @@ body::after {
     top: 0;
     bottom: 0;
     left: 50%;
-    border-left: 0.3em dotted #CCC;
+    border-left: 0.1rem dotted #CCC;
 }
 
+/* menu nav */
 nav {
   display:fixed;
-  margin: 5em;
+  height: 15vh;
 }
 
 .menu ul {
-  padding-left: 0;
+  height: 100%;
+  display: flex; /* muda o fluxo dentro do elemento */
+  list-style-type: none;
 }
-
 .menu li {
-  display: inline;
-  font-size: 1.5em;
-  margin: 0;
-}
-
-.menu li:first-child {
-  margin-left: 10%;
-}
-
-.menu li:last-child {
-  left: 0;
+  font-size: 1rem;
+  margin: auto;
+  width: 50%;
+  text-align: center;
 }
 
 .menu a {
   text-decoration: none;
 }
 
+/* tela inicial */
+header {
+  height: 70vh;
+  background-color: #e5e5e5;
+  background-image: url(../img/dot.png);
+  display: flex;
+  flex-flow: column;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  margin: auto auto 0.5rem auto;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  width: 20vw;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  right: -73%;
+}
+
+h1::before {
+  content: "";
+  width: 20vw;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: -73%;
+}
+
+
+h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+  margin: 0.5rem auto auto auto;
+}
+
+.proxima {
+  height: 15vh;
+  display: flex;
+}
+
+.proxima a {
+  margin: auto;
+}
+
+.proxima span {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* trabalhos */
 p {
   color: #999999;
 }
 
 p a {
   text-decoration: none;
-}
-
-.inicio {
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: #e5e5e5;
-  background-image: url(../img/dot.png);
-}
-
-h1 {
-  font-size: 10em;
-  font-weight: normal;
-  text-align: center;
-}
-
-h2 {
-  font-size: 3em;
-  font-weight: normal;
-  text-align: center;
-}
-
-h2::after {
-  content: "";
-  border-top: 20px solid black;
-  position: absolute;
-  z-index: 1;
 }
