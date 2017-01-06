@@ -52,8 +52,9 @@ nav {
   position: fixed;
   display: block;
   background-color: #FFF;
-  z-index: 2;
+  z-index: 999;
 }
+
 
 .menu ul {
   height: 100%;
@@ -66,14 +67,20 @@ nav {
   margin: auto;
   width: 50%;
   text-align: center;
+  color: #696969;
 }
 
 .menu a {
   text-decoration: none;
 }
 
-/* tela inicial */
+.conteudo {
+  display: block;
+  position: relative;
+  top: 15vh;
+}
 
+/* tela inicial */
 header {
   height: 70vh;
   background-color: #e5e5e5;
@@ -121,6 +128,7 @@ h2 {
 .proxima {
   height: 15vh;
   display: flex;
+  z-index: 5;
 }
 
 
@@ -162,19 +170,22 @@ img {
 
 p {
   margin: 1rem 1rem auto 1rem;
-  color: #999;
+  color: #696969;
 }
 
 p a {
   text-decoration: none;
 }
 
+
 .trabalho-1 {
   height: 70vh;
+  margin-top: 2rem;
+  display: block;
 }
 
 .trabalho-1 span {
-  color: #999;
+  color: #696969;
   margin: 1rem 1rem auto 1rem;
   font-size: 1.3rem;
 }
@@ -183,6 +194,7 @@ p a {
 /* sobre  e contato*/
 .sobre {
   height: 85vh;
+  display: block;
 }
 
 .rede-social ul {
@@ -200,4 +212,10 @@ p a {
 .contato a {
   margin: 2rem 1rem auto 1rem;
   color: #696969;
+}
+
+
+
+.teste {
+  display: block;
 }
