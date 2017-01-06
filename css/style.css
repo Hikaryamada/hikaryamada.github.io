@@ -123,6 +123,7 @@ h2 {
   display: flex;
 }
 
+
 .proxima a {
   margin: auto;
 }
@@ -137,38 +138,31 @@ h2 {
 h3 {
   font-size: 1.3rem;
   font-weight: lighter;
-  margin: 2rem 0.1rem 0.1rem 1rem;
+  margin: 2rem 1rem 1rem 1rem;
 }
 
 h4 {
   font-size: 0.8rem;
   font-weight: lighter;
-  margin: auto auto 2rem 1rem;
+  margin: -0.8rem auto 2rem 1rem;
 }
 
 img {
-  margin: 0;
-  bottom: 0;
-  padding: 0;
   width: 50%;
   height: 30vh;
   float: left;
 }
 
 .img-2 {
-  margin: 0;
-  bottom: 0;
-  padding: 0;
   width: 50%;
   height: 30vh;
   float: none;
-
+  margin-bottom: 1rem;
 }
 
 p {
-  margin-top: 2rem;
-  margin: 2rem;
-  color: #999999;
+  margin: 1rem 1rem auto 1rem;
+  color: #999;
 }
 
 p a {
@@ -177,4 +171,33 @@ p a {
 
 .trabalho-1 {
   height: 70vh;
+}
+
+.trabalho-1 span {
+  color: #999;
+  margin: 1rem 1rem auto 1rem;
+  font-size: 1.3rem;
+}
+
+
+/* sobre  e contato*/
+.sobre {
+  height: 85vh;
+}
+
+.rede-social ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.rede-social li {
+  margin: 2rem 0 2rem 0;
+  font-size: 3rem;
+  width: 33%;
+  text-align: center;
+}
+
+.contato a {
+  margin: 2rem 1rem auto 1rem;
+  color: #696969;
 }
