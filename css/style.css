@@ -100,7 +100,6 @@ header {
   background-image: url(../img/dot.png);
   display: flex;
   flex-flow: column;
-  z-index: 10000;
 }
 
 h1 {
@@ -180,6 +179,17 @@ h4 {
   background-size: cover;
   background-image: url(../img/teste.jpg);
   background-position: center;
+}
+
+.img-1lb,
+.img-2lb {
+  display: none;
+  position: fixed;
+  z-index: 999;
+}
+
+.lightbox {
+  display: none;
 }
 
 p {
