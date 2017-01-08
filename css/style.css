@@ -46,7 +46,7 @@ body {
     top: 0;
     bottom: 0;
     left: 50%;
-    border-left: 0.1rem dotted #CCC;
+    border-left: 0.5px dotted #CCC;
     height: 100%;
 }
 
@@ -76,11 +76,26 @@ nav.linha {
   width: 50%;
   text-align: center;
   color: #696969;
+  border-top: 1rem;
+}
+
+.menu li a {
+  transition: all .4s ease;
 }
 
 .menu a {
   text-decoration: none;
+  color: #696969;
 }
+
+.menu a:hover {
+  border-bottom: 1px solid #000;
+}
+
+.menu li:target {
+  border-bottom: 1px solid #000;
+}
+
 
 /* tela inicial */
 .conteudo {
@@ -110,7 +125,7 @@ h1::after {
   content: "";
   width: 20vw;
   height: 1px;
-  background-color: black;
+  background-color: #000;
   position: absolute;
   top: 50%;
   right: -73%;
@@ -120,7 +135,7 @@ h1::before {
   content: "";
   width: 20vw;
   height: 1px;
-  background-color: black;
+  background-color: #000;
   position: absolute;
   top: 50%;
   left: -73%;
@@ -137,11 +152,11 @@ h2 {
 .proxima {
   height: 15vh;
   display: flex;
-  z-index: 5;
 }
 
 .proxima a {
   margin: auto;
+  color: #696969;
 }
 
 .proxima span {
@@ -155,7 +170,7 @@ h3 {
   font-size: 1.3rem;
   font-weight: lighter;
   margin: 0 1rem 1rem 1rem;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 h4 {
@@ -178,7 +193,7 @@ h4 {
 .img-1,
 .img-2 {
   width: 50%;
-  height: 35vh;
+  height: 30vh;
   background-size: cover;
   background-image: url(../img/teste.jpg);
   background-position: center;
@@ -218,7 +233,6 @@ p a {
 
 .trabalho-1 {
   height: 70vh;
-  margin-top: 2rem;
   display: block;
 }
 
@@ -229,7 +243,7 @@ p a {
 }
 
 .topo-15 {
-  padding-top: 10vh;
+  padding-top: 15vh;
 }
 
 /* sobre  e contato*/
@@ -247,8 +261,9 @@ p a {
 .rede-social li {
   margin: 2rem 0 2rem 0;
   font-size: 3rem;
-  width: 33%;
+  width: 33.34%;
   text-align: center;
+  z-index: 9999;
 }
 
 .contato a {
@@ -270,7 +285,7 @@ p a {
     content: "";
     width: 20vw;
     height: 1px;
-    background-color: black;
+    background-color: #000;
     position: absolute;
     top: 50%;
     right: -90%;
@@ -280,7 +295,7 @@ p a {
     content: "";
     width: 20vw;
     height: 1px;
-    background-color: black;
+    background-color: #000;
     position: absolute;
     top: 50%;
     left: -90%;
