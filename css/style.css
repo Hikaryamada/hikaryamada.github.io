@@ -41,7 +41,7 @@ body {
 
 .linha::after {
     content: "";
-    position: fixed;
+    position: absolute;
     z-index: 100;
     top: 0;
     bottom: 0;
@@ -58,6 +58,10 @@ nav {
   display: block;
   background-color: blue;
   z-index: 999;
+}
+
+nav.linha {
+  position: fixed;
 }
 
 .menu ul {
@@ -78,15 +82,16 @@ nav {
   text-decoration: none;
 }
 
+/* tela inicial */
 .conteudo {
   display: block;
-  position: relative;
   top: 15vh;
+  position: relative;
 }
 
-/* tela inicial */
 header {
   height: 70vh;
+  min-height: 70vh;
   background-color: #e5e5e5;
   background-image: url(../img/dot.png);
   display: flex;
@@ -150,7 +155,8 @@ h2 {
 h3 {
   font-size: 1.3rem;
   font-weight: lighter;
-  margin: 2rem 1rem 1rem 1rem;
+  margin: 0 1rem 1rem 1rem;
+  padding-top: 1rem;
 }
 
 h4 {
