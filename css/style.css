@@ -26,6 +26,10 @@ a:focus {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -56,7 +60,7 @@ nav {
   height: 15vh;
   position: fixed;
   display: block;
-  background-color: blue;
+  background-color: #FFF;
   z-index: 999;
 }
 
@@ -165,15 +169,23 @@ h4 {
   margin: -0.8rem auto 2rem 1rem;
 }
 
-img {
+.bloco-img {
+  display: flex;
+}
+
+.img-1,
+.img-2 {
   width: 50%;
   height: 30vh;
-  float: left;
+  background-size: cover;
+  background-image: url(../img/teste.jpg);
+  background-position: center;
 }
 
 p {
   margin: 1rem 1rem auto 1rem;
   color: #696969;
+  float: none;
 }
 
 p a {
@@ -184,7 +196,6 @@ p a {
   height: 70vh;
   margin-top: 2rem;
   display: block;
-  background-color: red;
 }
 
 .trabalho-1 span {
