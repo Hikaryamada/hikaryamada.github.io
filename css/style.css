@@ -26,10 +26,6 @@ a:focus {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -172,24 +168,42 @@ h4 {
   display: flex;
 }
 
+.bloco-img a{
+  display: block;
+  text-indent: -9999px;
+  width: 100%;
+  height: 30vh;
+}
+
 .img-1,
 .img-2 {
   width: 50%;
-  height: 30vh;
+  height: 35vh;
   background-size: cover;
   background-image: url(../img/teste.jpg);
   background-position: center;
 }
 
-.img-1lb,
-.img-2lb {
-  display: none;
-  position: fixed;
-  z-index: 999;
-}
-
 .lightbox {
   display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0,0,0,0.8);
+}
+
+img {
+    max-width: 90%;
+    margin-top: 5%;
+}
+
+.lightbox:target {
+  outline: none;
+  display: block;
 }
 
 p {
