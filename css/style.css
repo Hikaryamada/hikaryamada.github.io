@@ -79,10 +79,6 @@ nav.linha {
   border-top: 1rem;
 }
 
-.menu li a {
-  transition: all .4s ease;
-}
-
 .menu a {
   text-decoration: none;
   color: #696969;
@@ -191,12 +187,79 @@ h4 {
 }
 
 .img-1,
-.img-2 {
+.img-2,
+.img-3,
+.img-4,
+.img-5,
+.img-6,
+.img-7,
+.img-8,
+.img-9,
+.img-10,
+.img-11,
+.img-12,
+.img-13,
+.img-14 {
   width: 50%;
   height: 30vh;
   background-size: cover;
-  background-image: url(../img/teste.jpg);
   background-position: center;
+}
+
+.img-1 {
+  background-image: url(../img/sal-1.jpg);
+}
+
+.img-2 {
+  background-image: url(../img/sal-2.jpg);
+}
+
+.img-3 {
+  background-image: url(../img/apo-1.jpg);
+}
+
+.img-4 {
+  background-image: url(../img/apo-2.jpg);
+}
+
+.img-5 {
+  background-image: url(../img/con-1.jpg);
+}
+
+.img-6 {
+  background-image: url(../img/con-2.jpg);
+}
+
+.img-7 {
+  background-image: url(../img/cel-1.jpg);
+}
+
+.img-8 {
+  background-image: url(../img/cel-2.jpg);
+}
+
+.img-9 {
+  background-image: url(../img/ds-1.jpg);
+}
+
+.img-10 {
+  background-image: url(../img/ds-2.jpg);
+}
+
+.img-11 {
+  background-image: url(../img/aqua-1.jpg);
+}
+
+.img-12 {
+  background-image: url(../img/aqua-2.jpg);
+}
+
+.img-13 {
+  background-image: url(../img/aqua-3.jpg);
+}
+
+.img-14 {
+  background-image: url(../img/aqua-4.jpg);
 }
 
 .lightbox {
@@ -213,7 +276,8 @@ h4 {
 
 img {
     max-width: 90%;
-    margin-top: 5%;
+    max-height: 90%;
+    margin-top: 2%;
 }
 
 .lightbox:target {
@@ -231,13 +295,18 @@ p a {
   text-decoration: none;
 }
 
-.trabalho-1 {
+.trabalho-1,
+.trabalho-2,
+.trabalho-3,
+.trabalho-4,
+.trabalho-5,
+.trabalho-6,
+.trabalho-7 {
   height: 70vh;
   display: block;
 }
 
-.trabalho-1 span {
-  color: #696969;
+.icone-behance {
   margin: 1rem 1rem auto 1rem;
   font-size: 1.3rem;
 }
