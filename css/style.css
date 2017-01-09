@@ -272,39 +272,42 @@ p a {
 }
 
 /* media querie */
-@media (min-width: 630px) {
-  h1 {
-    font-size: 3rem;
-    font-weight: normal;
-    text-align: center;
-    margin: auto auto 0.5rem auto;
-    position: relative;
-  }
-
+@media (min-width: 410px) {
   h1::after {
-    content: "";
-    width: 20vw;
-    height: 1px;
-    background-color: #000;
-    position: absolute;
-    top: 50%;
-    right: -90%;
+    right: -100%;
   }
 
   h1::before {
-    content: "";
-    width: 20vw;
-    height: 1px;
-    background-color: #000;
-    position: absolute;
-    top: 50%;
-    left: -90%;
+    left: -100%;
   }
 
+@media (min-width: 510px) {
+  h1::after {
+    right: -150%;
+  }
 
-  h2 {
-    font-size: 1rem;
-    font-weight: normal;
-    text-align: center;
-    margin: 0.5rem auto auto auto;
+  h1::before {
+    left: -150%;
+  }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+
+  h1::after {
+    right: -180%;
+  }
+
+  h1::before {
+    left: -180%;
+  }
+
+@media (min-width: 1180px) {
+  h1::after {
+    right: -200%;
+  }
+
+  h1::before {
+    left: -200%;
   }
